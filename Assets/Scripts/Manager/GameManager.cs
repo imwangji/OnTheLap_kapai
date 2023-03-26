@@ -1,4 +1,5 @@
 using System;
+using KapaiGame;
 using UnityEngine;
 
 namespace Manager

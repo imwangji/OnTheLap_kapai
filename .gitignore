@@ -1,0 +1,71 @@
+﻿# Unity generated files
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+
+# Visual Studio generated files
+/[Vv]isual[Ss]tudio/
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.bak
+*.swp
+*.*~ 
+*.swm
+*.userprefs
+*.pidb.meta
+*.pdb.meta
+*.pdb
+*.mdb
+*.mdb.meta
+*.opendb
+*.opendb.meta
+
+# macOS generated files
+.DS_Store
+._*
+*/.DS_Store
+*/._*
+
+# Linux generated files
+*~ 
+*.swp
+*.bak
+*.swm
+
+# Rider generated files
+*.dotSettings.user
+.idea/
+
+# User-specific files
+*.userprefs
+*.pidb.meta
+*.pdb.meta
+*.pdb
+*.mdb
+*.mdb.meta
+*.opendb
+*.opendb.meta
+
+# Backup files
+*.bak
+
+# .tmp files
+*.tmp
+
+# Unity3D generated meta files
+*.pidb
+*.pidb.meta
+
+# Compiled objects
+*.pyc
+*.pyo
+*.mo
+
+# Logs
+*.log

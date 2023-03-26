@@ -1,4 +1,4 @@
-using Card;
+using KapaiGame;
 using TMPro;
 using UnityEngine;
 

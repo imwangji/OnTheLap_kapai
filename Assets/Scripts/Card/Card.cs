@@ -1,4 +1,4 @@
-namespace Card
+namespace KapaiGame
 {
     public abstract class Card
     {

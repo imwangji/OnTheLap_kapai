@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Buff;
 
-namespace Card.SkillCards
+namespace KapaiGame
 {
     public class FireballCard:SkillCard
     {

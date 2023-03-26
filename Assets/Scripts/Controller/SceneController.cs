@@ -1,5 +1,6 @@
 using Manager;
 using UnityEngine;
+using KapaiGame;
 namespace Controller
 {
     public class SceneController : MonoBehaviour
@@ -8,12 +9,12 @@ namespace Controller
         void Start()
         {
             GameManager.Instance.OnFloorChanged += RenderFloorInfo;
-            InitANewRound();
         }
 
         private void InitANewRound()
         {
-            var round = new Round.Round();
+            var round = new Round();
+            round.OnRoundCreate += RenderRound;
         }
 
         // Update is called once per frame
@@ -24,7 +25,12 @@ namespace Controller
 
         void RenderFloorInfo(TowerFloor towerFloor)
         {
-        
+            InitANewRound();
+        }
+
+        void RenderRound(Round round)
+        {
+            
         }
     }
 }

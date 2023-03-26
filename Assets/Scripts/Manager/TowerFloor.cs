@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-
+using KapaiGame;
 public class TowerFloor
 {
     public List<Monster> Monsters = new List<Monster>();

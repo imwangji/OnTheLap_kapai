@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Card
+namespace KapaiGame
 {
     public abstract class SkillCard : Card
     {

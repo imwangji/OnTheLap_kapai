@@ -1,5 +1,5 @@
+using Manager;
 using UnityEngine;
-
 namespace Controller
 {
     public class SceneController : MonoBehaviour
@@ -7,7 +7,13 @@ namespace Controller
         public Canvas canvas; 
         void Start()
         {
-            GameManager.Instance.OnFloorChanged += RenderScene;
+            GameManager.Instance.OnFloorChanged += RenderFloorInfo;
+            InitANewRound();
+        }
+
+        private void InitANewRound()
+        {
+            var round = new Round.Round();
         }
 
         // Update is called once per frame
@@ -16,7 +22,7 @@ namespace Controller
             
         }
 
-        void RenderScene(TowerFloor towerFloor)
+        void RenderFloorInfo(TowerFloor towerFloor)
         {
         
         }

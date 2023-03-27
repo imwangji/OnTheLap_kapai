@@ -10,7 +10,7 @@ namespace Prefabs.Card
         public TextMeshProUGUI cost;
         public TextMeshProUGUI attackPower;
         public TextMeshProUGUI buffDescriptions;
-        void SetCardData(SkillCard card)
+        public void SetCardData(SkillCard card)
         {
             _card = card;
         }

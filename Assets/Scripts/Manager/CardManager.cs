@@ -21,22 +21,20 @@ namespace KapaiGame
             // 初始化注册卡片列表
             registeredCards = new List<Card>
             {
-                // 在这里添加您的卡片实例
-                // ...
+                new FireballCard(),
             };
         }
 
-        // GetCardsByLevel方法，返回一组卡片
-        public List<Card> GetAvailableCardsByLevel(int level)
+        public List<Card> DrawCard()
         {
-            // 根据等级选择合适的卡片
             List<Card> selectedCards = new List<Card>();
+            int numCardsToDraw = UnityEngine.Random.Range(2, 4); // 随机抽取2到3张卡片
 
-            // 在此处实现您自己的逻辑，根据等级筛选卡片
-            // 示例：选择所有已注册的卡片
-            foreach (Card card in registeredCards)
+            for (int i = 0; i < numCardsToDraw; i++)
             {
-                selectedCards.Add(card);
+                int randomIndex = UnityEngine.Random.Range(0, registeredCards.Count); // 从注册卡片列表中随机选择一个索引
+                Card selectedCard = registeredCards[randomIndex]; // 选择随机索引对应的卡片
+                selectedCards.Add(selectedCard); // 将选中的卡片添加到选中卡片列表中
             }
 
             return selectedCards;
